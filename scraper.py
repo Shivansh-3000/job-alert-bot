@@ -8,7 +8,7 @@ import os
 # ================= CONFIG ================= #
 
 EMAIL = "gairolashivansh@gmail.com"
-APP_PASSWORD = "Arjoo_bhai3000"
+APP_PASSWORD = "fzexahbrwolmyfja"
 
 TELEGRAM_TOKEN = "8512201575:AAGg4d8P5IqQ7w3me7gkNVD9DVZOHGEPY8s"
 CHAT_ID = "1099624376"
@@ -113,4 +113,5 @@ Link: {job['link']}
 
 if __name__ == "__main__":
     main()
+
 
