@@ -1,0 +1,24 @@
+name: Job Alert Bot
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # runs every 1 hour
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install libraries
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        run: python script.py
