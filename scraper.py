@@ -89,8 +89,6 @@ def scrape():
 # ================= MAIN ================= #
 
 def main():
-    send_email("Test Alert ", "GitHub workflow working")
-    send_telegram("Test Alert  Workflow working")
     seen = load_seen()
     jobs = scrape()
 
@@ -113,5 +111,6 @@ Link: {job['link']}
 
 if __name__ == "__main__":
     main()
+
 
 
