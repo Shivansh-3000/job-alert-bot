@@ -198,6 +198,8 @@ def main():
         if job["link"] not in seen:
 
             message = f"""
+    print("EMAIL:", EMAIL)
+    print("TELEGRAM:", TELEGRAM_TOKEN)
 New Job Opening 🚀
 
 Company: {job['company']}
@@ -216,3 +218,4 @@ Link: {job['link']}
 
 if __name__ == "__main__":
     main()
+
